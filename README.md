@@ -1,1 +1,1 @@
-# gin-guide
+# gin-greetings
