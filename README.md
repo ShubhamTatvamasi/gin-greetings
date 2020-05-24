@@ -14,11 +14,11 @@ docker run -d -p 80:80 shubhamtatvamasi/gin-greetings
 
 deploy on kubernetes
 ```bash
-kubectl run upanishadganga --image=shubhamtatvamasi/gin-greetings --restart=Never --port=80 --expose
+kubectl run gin-greetings --image=shubhamtatvamasi/gin-greetings --restart=Never --port=80 --expose
 
-kubectl patch svc upanishadganga \
+kubectl patch svc gin-greetings \
   --patch='{"spec": {"type": "NodePort"}}'
 
-kubectl patch svc upanishadganga \
+kubectl patch svc gin-greetings \
   --patch='{"spec": {"ports": [{"nodePort": 30000, "port": 80}]}}'
 ```
