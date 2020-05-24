@@ -5,15 +5,15 @@ import "strconv"
 
 func main() {
 
+  const greetings = "Welcome to Gin "
   number := 0
-  greetings := "Welcome to Gin "
 
   r := gin.Default()
 
   r.GET("/", func(c *gin.Context) {
 
     number++
-    c.String(200, greetings + strconv.Itoa(number) + "\n" )
+    c.String(200, greetings + strconv.Itoa(number) + "\n")
 
   })
 
