@@ -7,3 +7,6 @@
 [![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/shubhamtatvamasi/gin-greetings/latest)](https://hub.docker.com/r/shubhamtatvamasi/gin-greetings)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shubhamtatvamasi/gin-greetings)](https://hub.docker.com/r/shubhamtatvamasi/gin-greetings)
 
+```bash
+docker run -d -p 80:80 shubhamtatvamasi/gin-greetings
+```
