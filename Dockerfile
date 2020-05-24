@@ -9,7 +9,7 @@ ENV CGO_ENABLED=0
 
 RUN go build main.go
 
-# ########### gin-greetings ###########
+########### gin-greetings ###########
 FROM scratch
 
 COPY --from=builder /go/main .
