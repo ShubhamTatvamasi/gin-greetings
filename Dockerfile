@@ -5,7 +5,7 @@ COPY main.go .
 
 RUN go build main.go
 
-########### hello-world ###########
+########### gin-greetings ###########
 FROM scratch
 
 COPY --from=builder /go/main .
