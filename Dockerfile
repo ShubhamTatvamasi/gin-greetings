@@ -14,6 +14,8 @@ FROM scratch
 
 COPY --from=builder /go/main .
 
+ENV GIN_MODE=release
+
 EXPOSE 80
 
 CMD ["/main"]
